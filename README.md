@@ -13,7 +13,8 @@ To get your API key if you haven't, go to `[http://www.lastfm.com.br/api/account
 ## Initialize the plugin
 Enter your information to the plugin, `apiKey` and `username` are required
 
-`LastFM.init({
+<pre>
+LastFM.init({
    apiKey: '67b7462dbd29a1451a56b18c5d66c517', // your API key (REQUIRED)
    username: 'brunoferreira_', // your username (REQUIRED)
    autoUpdate: true // do you want to update songs automatically?
@@ -25,4 +26,5 @@ Enter your information to the plugin, `apiKey` and `username` are required
    limit: 6 // number of how many songs will display
    noImage: 'img/cover_placeholder_lg.jpg', // image that will be displayed if there is no image of LastFM
    interval: 60000 // interval to update the track list
- });`
+ });
+</pre>
