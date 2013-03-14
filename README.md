@@ -1,5 +1,5 @@
 # Demo
-[https://github.com/brunoqueiros/lastfm-tracks](https://github.com/brunoqueiros/lastfm-tracks "https://github.com/brunoqueiros/lastfm-tracks")
+[http://brunoqueiros.github.com/lastfm-tracks/](http://brunoqueiros.github.com/lastfm-tracks/ "http://brunoqueiros.github.com/lastfm-tracks/")
 
 # How to use?
 ## Download it!
