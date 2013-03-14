@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LastFM API</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lib/monokai.css">
+	<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div class="top">
+		<a href="https://github.com/brunoqueiros/lastfm-tracks" target="_blank" title="Contribute to project"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+		<div class="wrapper">
+			<h1 class="page-title">LastFM tracks</h1>
+			<p class="description">Display your recent tracks on LastFM!</p>
+		</div>
+	</div>
+	<div class="wrapper">
+		<h2>Example</h2>
+		<div class="lfm-container clearfix"></div>
+
+		<h2>How to use?</h2>
+		<h3>Download it!</h3>
+		<p><a href="https://github.com/brunoqueiros/lastfm-tracks/archive/master.zip" title="Download the files">Click here</a> to download the files</p>
+
+		<h3>Copy and paste</h3>
+		<p>Copy and paste the required files into your file.</p>
+		<pre class="code">
+			<code class="xml">&lt;script src="js/lastfm-tracks.js"&gt;&lt;/script&gt;</code>
+		</pre>
+
+		<h3>Get your API key</h3>
+		<p>To get your API key if you haven't, go to <code class="inline-code"><a href="http://www.lastfm.com.br/api/account/create" target="_blank">http://www.lastfm.com.br/api/account/create</a></code> and generate your API key</p>
+
+
+		<h3>Initialize the plugin</h3>
+		<p>Enter your information to the plugin, <code class="inline-code">apiKey</code> and <code class="inline-code">username</code> are required</p>
+		<pre class="code">
+			<code class="javascript">
+ LastFM.init({
+   apiKey: '67b7462dbd29a1451a56b18c5d66c517', // your API key (REQUIRED)
+   username: 'brunoferreira_', // your username (REQUIRED)
+   autoUpdate: true // do you want to update songs automatically?
+   container: 'lfm-container', // class of the element that will contain all the tracks
+   musicClass: 'lfm-music', // class of the element that will contain the music
+   artistClass: 'lfm-artist', // class of the element that will contain the artist
+   trackClass: 'lfm-track', // class of the element that will contain the track
+   imageSize: 'large', // size of the cover
+   limit: 6 // number of how many songs will display
+   noImage: 'img/cover_placeholder_lg.jpg', // image that will be displayed if there is no image of LastFM
+   interval: 60000 // interval to update the track list
+ });
+			</code>
+		</pre>
+
+		<footer class="page-footer"><p>Developed by <a href="https://github.com/brunoqueiros" title="Visit my Github" target="_blank">Bruno Queiros</a></p></footer>
+	</div>
+
+	<script src="js/lastfm-tracks.min.js"></script>
+	<script>
+	    LastFM.init({
+	      'apiKey': '67b7462dbd29a1451a56b18c5d66c517',
+	      'username': 'brunoferreira_',
+	      'autoUpdate': true
+	    });
+	</script>
+</body>
+</html>
